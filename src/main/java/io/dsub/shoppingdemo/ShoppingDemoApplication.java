@@ -2,8 +2,10 @@ package io.dsub.shoppingdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
+@EnableConfigurationProperties
 public class ShoppingDemoApplication {
 
     public static void main(String[] args) {

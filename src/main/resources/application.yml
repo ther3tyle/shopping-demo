@@ -1,10 +1,7 @@
 spring:
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://www.dsub.io:3306/shopping_demo?serverTimezone=UTC
-    username: ther3tyle
-    password: gozldwmf77
   jpa:
     generate-ddl: true
     hibernate:
       ddl-auto: update
+server:
+  port: 3333
