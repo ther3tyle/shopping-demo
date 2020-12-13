@@ -24,7 +24,8 @@ public class UserService {
 
     // 이름에 대해서 .. 누구는 modify, 누구는 update 말고 uniform 하게 정해서 작성할 것!
     public UserDTO updateUser(UserCommand.UpdateUser updateUser, Long userId) {
-        User user = userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
+        User user = userRepository.findById(userId).orElseThrow(
+                () -> new UserNotFoundException(String.valueOf(userId)));
 
         user.setAddress(updateUser.getAddress());
         user.setName(updateUser.getName());

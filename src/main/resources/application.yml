@@ -3,5 +3,11 @@ spring:
     generate-ddl: true
     hibernate:
       ddl-auto: update
+  datasource:
+# spring.datasource.url
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://www.dsub.io:3306/shopping_demo
+    username: ther3tyle
+    password: gozldwmf77
 server:
-  port: 3333
+  port: 8080

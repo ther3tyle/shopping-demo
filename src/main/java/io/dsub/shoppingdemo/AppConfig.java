@@ -11,13 +11,13 @@ import javax.sql.DataSource;
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
 
-    @Bean
-    public DataSource dataSource(Environment environment) {
-        return DataSourceBuilder.create()
-                .url(environment.getProperty("url"))
-                .username(environment.getProperty("username"))
-                .password(environment.getProperty("password"))
-                .driverClassName("com.mysql.cj.jdbc.Driver")
-                .build();
-    }
+//    @Bean
+//    public DataSource dataSource(Environment environment) {
+//        return DataSourceBuilder.create()
+//                .url(environment.getProperty("url"))
+//                .username(environment.getProperty("username"))
+//                .password(environment.getProperty("password"))
+//                .driverClassName("com.mysql.cj.jdbc.Driver")
+//                .build();
+//    }
 }
